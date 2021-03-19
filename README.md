@@ -3,19 +3,6 @@
 
 <h4 align="center">Ovarian Cancer Prediction from Mass Spectrometry Data</h4>
 
-<p align="center">
-    <a href="https://github.com/Armaniii/Ovarian-Cancer-Prediction/blob/main/commits/master">
-    <img src="https://img.shields.io/github/last-commit/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub last commit">
-    <a href="https://github.com/Ovarian-Cancer-Prediction/issues">
-    <img src="https://img.shields.io/github/issues-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub issues">
-    <a href="https://github.com/Ovarian-Cancer-Prediction/pulls">
-    <img src="https://img.shields.io/github/issues-pr-raw/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
-         alt="GitHub pull requests">
-    <a href="https://twitter.com/intent/tweet?text=Try this CS:GO AutoExec:&url=https%3A%2F%2Fgithub.com%2FArmynC%2FArminC-AutoExec">
-
-</p>
       
 <p align="center">
   <a href="#Introduction">Introduction</a> •
