@@ -62,8 +62,8 @@ import ast
 
 
 def data_handle():
-    cancer_entries = os.listdir('C:/Users/arman/Workspace/CS234/Project/OvarianCD_PostQAQC/Cancer')                                     # Directory containing Cancerous Mass Spec Files
-    normal_entries = os.listdir('C:/Users/arman/Workspace/CS234/Project/OvarianCD_PostQAQC/Normal')                                     # Directory containing Normal Mass Spec Files
+    cancer_entries = os.listdir('path/to/cancer/directory')                                     # Directory containing Cancerous Mass Spec Files
+    normal_entries = os.listdir('path/to/normal/directory')                                     # Directory containing Normal Mass Spec Files
     raw = []
     classes = []
     discard_counter = 0
@@ -71,7 +71,7 @@ def data_handle():
     n_counter = 0
     bins =[]
     for entry in cancer_entries:
-        df = pd.read_csv('C:/Users/arman/Workspace/CS234/Project/OvarianCD_PostQAQC/Cancer/' + entry, sep = "\t", header = None)
+        df = pd.read_csv('path/to/cancer/directory' + entry, sep = "\t", header = None)
         x = df[1]
         x = x.values.flatten()      # Convert to Numpy 1d Array
 
@@ -98,7 +98,7 @@ def data_handle():
             discard_counter+=1
 
     for entry in normal_entries:
-        df = pd.read_csv('C:/Users/arman/Workspace/CS234/Project/OvarianCD_PostQAQC/Normal/' + entry, sep = "\t", header = None)
+        df = pd.read_csv('path/to/normal/directory' + entry, sep = "\t", header = None)
         #print(df)
         x = df[1]
         x = x.values.flatten()      # Convert to Numpy 1d Array
@@ -161,13 +161,13 @@ def data_handle():
     #     plt.bar(x,height=[n_counter,c_counter-remove_n])
     #     plt.xticks(x, ['Cancer','Normal'])
     #     plt.show()
-    results.to_csv("C:/Users/arman/Workspace/CS234/Project/raw_data_combined.csv",index=False)
-    classes.to_csv("C:/Users/arman/Workspace/CS234/Project/classes.csv",index = False)
+    results.to_csv("output/raw_data_combined.csv",index=False)
+    classes.to_csv("output/classes.csv",index = False)
     return results, classes
 
 def get_test_data():
     raw = []
-    df = pd.read_csv('C:/Users/arman/Workspace/CS234/Project/OvarianCD_PostQAQC/Normal/daf-0186.txt', sep = "\t", header = None,dtype='float64')
+    df = pd.read_csv('single/test/Normal/daf-0186.txt', sep = "\t", header = None,dtype='float64')
     x = df[1]
     x = x.values.flatten()      # Convert to Numpy 1d Array
 
@@ -222,8 +222,8 @@ if __name__ == '__main__':
     if make_data:
         x,y = data_handle()
     else:
-        x = pd.read_csv("C:/Users/arman/Workspace/CS234/Project/raw_data_combined.csv", quotechar='"', sep=',',converters={1:ast.literal_eval})
-        y = pd.read_csv("C:/Users/arman/Workspace/CS234/Project/classes.csv",dtype='float64')
+        x = pd.read_csv("output/raw_data_combined.csv", quotechar='"', sep=',',converters={1:ast.literal_eval})
+        y = pd.read_csv("output/classes.csv",dtype='float64')
     # x = x.values.replace("'", '').apply(ast.literal_eval)         < -- basic logic for fixing csv formatting errors
 
     pca = PCA(n_components = 1)
