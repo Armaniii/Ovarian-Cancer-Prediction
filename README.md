@@ -61,9 +61,9 @@ M/Z ratio  | Intensity/Abundance
 >### Preprocessing
 >##### 1. Read in the resepctive datasets and organize into a dataframe. Create a second dataframe to hold the targets ( class ) of each file. 
 >   Class Distribution
->   ![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/pics/class_distribution.PNG)
+>   ![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/blob/main/pics/class_distribution.PNG?raw=true)
 >   Each row in the dataframe represents the sample and each value in the row contains a tuple of the m/z and intensity.
->   ![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/pics/data_raw.PNG)
+>   ![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/blob/main/pics/data_raw.PNG?raw=true)
 >##### 2. Peak-Finding
 >Using a threshold-based peak finder, find the top 80 peaks for each sample.
 >##### Cancer
@@ -74,14 +74,14 @@ M/Z ratio  | Intensity/Abundance
 > Next PCA is applied as a linear dimensionality reduction technique to transform the 2D data into a single dimension. 
 >##### 4. Singular Value Decomposition (SVD) for overall dimensionality reducion
 > We perform SVD along with KFold Cross Validation on our 80 features to find the best features to use and as to not fall victim to the curse of dimensionality.
-> ![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/pics/svd.PNG)
+![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/blob/main/pics/svd.PNG?raw=true)
 >### Model
 >##### 1. Support Vector Machine
 > Using 70/30 train-test split on SVD produced data
 >##### 2. Deep Neural Network
 >Using 70/30 train-test split on SVD produced data
 >Modeled using hyperparameters 
-> ![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/pics/dnn.PNG)
+![Image](https://github.com/Armaniii/Ovarian-Cancer-Prediction/blob/main/pics/dnn.PNG?raw=true)
 
 ## Results
 
