@@ -22,7 +22,7 @@
   <a href="#Background">Background</a> •
   <a href="#Data">Data</a> •
   <a href="#Methods">Method</a> •
-  <a href="#Results">Results</a> •
+  <a href="#Results">Results</a>
 </p>
 
 ---
