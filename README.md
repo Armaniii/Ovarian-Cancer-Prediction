@@ -4,7 +4,7 @@
 <h4 align="center">Ovarian Cancer Prediction from Mass Spectrometry Data</h4>
 
 <p align="center">
-    <a href="https://github.com/Armaniii/Ovarian-Cancer-Prediction/commits/master">
+    <a href="https://github.com/Armaniii/Ovarian-Cancer-Prediction/blob/main/commits/master">
     <img src="https://img.shields.io/github/last-commit/ArmynC/ArminC-AutoExec.svg?style=flat-square&logo=github&logoColor=white"
          alt="GitHub last commit">
     <a href="https://github.com/Ovarian-Cancer-Prediction/issues">
